@@ -8,6 +8,12 @@
     },
     {
       "path": "./apps/fe"
+    },
+    {
+      "path": "./apps/be-e2e"
+    },
+    {
+      "path": "./apps/be"
     }
   ]
 }

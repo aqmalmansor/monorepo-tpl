@@ -3,25 +3,20 @@
   "compilerOptions": {
     "outDir": "dist",
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
-    "types": ["@react-router/node", "vite/client", "node"],
+    "types": ["vite/client"],
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "resolveJsonModule": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
-    "rootDir": "app",
-    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
+    "rootDir": "src",
+    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "baseUrl": "./",
+    "paths": {
+      "@*": ["src/*"]
+    }
   },
-  "include": [
-    "app/**/*.ts",
-    "app/**/*.tsx",
-    "app/**/*.js",
-    "app/**/*.jsx",
-    "**/.server/**/*.ts",
-    "**/.server/**/*.tsx",
-    "**/.client/**/*.ts",
-    "**/.client/**/*.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"],
   "exclude": [
     "out-tsc",
     "dist",
