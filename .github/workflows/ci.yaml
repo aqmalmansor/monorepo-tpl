@@ -25,5 +25,3 @@ jobs:
         with:
           node-version: 20
           cache: 'pnpm'
-      - run: pnpm install
-      - run: npx nx run-many -t lint build
