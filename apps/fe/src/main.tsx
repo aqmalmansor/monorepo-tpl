@@ -1,15 +1,15 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router';
 
-import { Navbar } from "@components/common";
-import { AboutPage, HomePage } from "@pages";
+import { Navbar } from '@components/common';
+import { AboutPage, HomePage } from '@pages';
 
-import "../styles.css";
+import '../styles.css';
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 
-if (!rootElement) throw new Error("Root element not found");
+if (!rootElement) throw new Error('Root element not found');
 
 const root = createRoot(rootElement);
 
