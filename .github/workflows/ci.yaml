@@ -26,6 +26,6 @@ jobs:
           node-version: 20
           cache: 'pnpm'
       - run: pnpm install
-      - run: npx nx run-many -t build typecheck
+      - run: npx nx run-many -t lint build
       - run: npx nx fix-ci
         if: always()
