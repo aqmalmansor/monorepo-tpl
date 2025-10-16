@@ -67,9 +67,19 @@
   },
   "scripts": {
     "build": "nx build",
-    "start": "nx serve"
+    "start": "nx serve",
+    "start:dev": "nx serve --configuration=development",
+    "start:prod": "nx serve --configuration=production",
+    "dev": "nodemon --exec \"tsx\" src/main.ts"
   },
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.9",
+    "nodemon": "^3.1.10",
+    "ts-node": "10.9.1",
+    "tsx": "^4.20.6",
+    "typescript": "~5.9.2"
   }
 }
