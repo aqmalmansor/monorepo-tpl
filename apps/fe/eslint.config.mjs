@@ -4,6 +4,7 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
+import js from "@eslint/js";
 import nx from "@nx/eslint-plugin";
 
 import baseConfig from "../../eslint.config.mjs";
