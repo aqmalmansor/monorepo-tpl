@@ -1,11 +1,10 @@
+import js from '@eslint/js';
+import nx from '@nx/eslint-plugin';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-
-import js from '@eslint/js';
-import nx from '@nx/eslint-plugin';
 
 import baseConfig from '../../eslint.config.mjs';
 
@@ -48,21 +47,6 @@ export default [
 
       // Unused variable warning
       '@typescript-eslint/no-unused-vars': ['warn'],
-
-      // Import sorting
-      'import/order': [
-        'error',
-        {
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            'parent',
-            'sibling',
-            'index',
-          ],
-        },
-      ],
 
       // Ignore useEffect dependencies (use with caution)
       'react-hooks/exhaustive-deps': 'off',

@@ -12,11 +12,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "moduleResolution": "bundler",
     "types": [],
     "baseUrl": "./",
     "paths": {
-      "@*": ["src/*"]
+      "@app/*": ["src/*"]
     }
   }
 }
